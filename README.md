@@ -23,10 +23,8 @@ O projeto foi desenvolvido com foco em clareza, organização e eficiência.
 
 ## 🛠️ Tecnologias utilizadas
 
-* JavaScript / Node.js *(ajuste se necessário)*
-* Express *(se estiver usando)*
-* PostgreSQL *(se aplicável)*
-* Outras bibliotecas auxiliares
+* TS / Node.js *(ajuste se necessário)*
+
 
 ---
 
