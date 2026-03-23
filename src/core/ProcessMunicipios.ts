@@ -2,14 +2,29 @@ import { Municipio } from "../services/IBGEService";
 import { normalize } from "../utils/normalize";
 import { InputMunicipio, ResultadoMunicipio } from "./types";
 
+function findBestMatch(nomeInput: string, municipios: Municipio[]) {
+  const nomeNormalizado = normalize(nomeInput);
+  const matches = municipios.filter(
+    (m) => normalize(m.nome) === nomeNormalizado,
+  );
+
+  if (matches.length === 1) return matches[0];
+
+  if (matches.length > 1) {
+    return (
+      matches.find((m) => m.microrregiao.mesorregiao.UF.sigla === "SP") ||
+      matches[0]
+    );
+  }
+  return null;
+}
+
 export function processMunicipios(
   data: InputMunicipio[],
   municipios: Municipio[],
 ): ResultadoMunicipio[] {
   return data.map((item) => {
-    const nome = normalize(item.municipio);
-
-    const match = municipios.find((m) => normalize(m.nome).includes(nome));
+    const match = findBestMatch(item.municipio, municipios);
 
     if (!match) {
       return {
