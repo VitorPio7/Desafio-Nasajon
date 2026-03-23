@@ -83,5 +83,3 @@ npm start dev
 Este projeto foi desenvolvido para fins de estudo e avaliação técnica.
 
 ---
-
-Se quiser, posso deixar esse README **100% personalizado com base no seu código real** (ex: o que exatamente o desafio faz, endpoints, lógica etc). Só me manda um print ou o código 👍
