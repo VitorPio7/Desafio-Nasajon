@@ -25,14 +25,14 @@ async function main() {
   const municipios = await ibgeService.getMunicipios();
 
   const results = processMunicipios(csvData, municipios);
+  const outputPath = path.resolve(process.cwd(), "data/resultado.csv");
 
-  writeCSV(results, "resultado.csv");
+  writeCSV(results, outputPath);
 
   const stats = calculateStats(results);
 
   const response = await submitService.send(stats, token);
-  console.log("lendo CSV de:",filePath)
-
+  console.log("lendo CSV de:", filePath);
 }
 
 main();
