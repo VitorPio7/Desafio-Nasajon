@@ -1,7 +1,4 @@
 
-
----
-
 # 🚀 Desafio Nasajon
 
 Projeto desenvolvido como solução para o desafio técnico proposto pela **Nasajon**, com o objetivo de avaliar habilidades em desenvolvimento, lógica e organização de código.
@@ -23,7 +20,7 @@ O projeto foi desenvolvido com foco em clareza, organização e eficiência.
 
 ## 🛠️ Tecnologias utilizadas
 
-* TS / Node.js *(ajuste se necessário)*
+* TS / Node.js 
 
 
 ---
@@ -33,7 +30,6 @@ O projeto foi desenvolvido com foco em clareza, organização e eficiência.
 * ✔️ Leitura e tratamento de dados
 * ✔️ Processamento das informações conforme o desafio
 * ✔️ Estrutura organizada e modular
-* ✔️ Possibilidade de extensão futura
 
 ---
 
@@ -42,10 +38,12 @@ O projeto foi desenvolvido com foco em clareza, organização e eficiência.
 ```bash
 📦 Desafio-Nasajon
  ┣ 📂 src
- ┃ ┣ 📂 controllers
+ ┃ ┣ 📂 core
+ ┃ ┣ 📂 csv
+ ┃ ┣ 📂 main
  ┃ ┣ 📂 services
- ┃ ┣ 📂 models
- ┃ ┗ 📜 index.js
+ ┃ ┣ 📂 utils
+ ┣ 📂 data
  ┣ 📜 package.json
  ┗ 📜 README.md
 ```
