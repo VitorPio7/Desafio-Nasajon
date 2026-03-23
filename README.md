@@ -75,35 +75,8 @@ npm install
 ### 4. Execute o projeto
 
 ```bash
-npm start
+npm start dev
 ```
-
----
-
-## 🧪 Exemplos de uso
-
-Explique aqui como testar o sistema:
-
-* Entrada de dados
-* Saída esperada
-* Exemplos de execução
-
----
-
-## 📈 Melhorias futuras
-
-* [ ] Implementar testes automatizados
-* [ ] Melhorar validações
-* [ ] Criar interface (frontend)
-* [ ] Deploy da aplicação
-
----
-
-## 👨‍💻 Autor
-
-Desenvolvido por **Vitor Pio Vieira**
-
-* GitHub: [https://github.com/VitorPio7](https://github.com/VitorPio7)
 
 ---
 
